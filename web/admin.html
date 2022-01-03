@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="entrymain">
+        <p>Please select ctegorie:</p>
+        <input type="radio" id="movie" name="ctgr" value="Best Movie" onclick="entry1()" checked>
+        <label for="movie">Best Movie</label>
+        <input type="radio" id="actor" name="ctgr" value="Best Actor" onclick="entry2()">
+        <label for="actor">Best Actor</label>
+        <input type="radio" id="actress" name="ctgr" value="Best Actress" onclick="entry3()">
+        <label for="actress">Best Actress</label>
+        <input type="radio" id="song" name="ctgr" value="Best Song" onclick="entry4()">
+        <label for="song">Best Song</label>
+        <input type="radio" id="singer" name="ctgr" value="Best Singer" onclick="entry5()">
+        <label for="singer">Best Singer</label>
+        <input type="radio" id="show" name="ctgr" value="Best TV Show" onclick="entry6()">
+        <label for="show">Best TV Show</label><br>
+
+
+
+
+        <div id="moviediv">
+            <form action="addmovie" method="post" enctype="multipart/form-data">
+
+                <h1 class="entryh1">Enter Best movie of the year nominees</h1>
+                <label>Enter movie name </label>
+                <input type="text" name="moviename"><br>
+                <label>Enter about movie</label>
+                <textarea rows="10" cols="20" name="movieabout">
+        </textarea>
+                <br>
+                <label>Enter movie image </label>
+                <input type="file" name="movieimage"><br>
+                <input type="submit" value="Enter"><br>
+
+            </form>
+            
+            
+            
+        </div>
+
+        <div id="actordiv">
+            <form action="addactor"  method="post" enctype="multipart/form-data">
+                
+            <h1 class="entryh1">Enter best Actor of the year nominees</h1>
+            <label>Enter Actor name </label>
+            <input type="text"><br>
+            <label>Enter about Actor</label>
+            <input type="text"><br>
+            <label>Enter Actor image </label>
+            <input type="file"><br>
+            <input type="submit" value="Enter"><br>
+            </form>
+
+        </div>
+
+
+        <div id="actressdiv">
+            <form action="addactress"  method="post" enctype="multipart/form-data">
+            <h1 class="entryh1">Enter best Actress of the year nominees</h1>
+            <label>Enter Actress name </label>
+            <input type="text"><br>
+            <label>Enter about Actress</label>
+            <input type="text"><br>
+            <label>Enter Actress image </label>
+            <input type="file"><br>
+            <input type="submit" value="Enter"><br>
+            </form>
+        </div>
+
+
+        <div id="songdiv">
+            <form action="addsong"  method="post" enctype="multipart/form-data">
+            <h1 class="entryh1">Enter best song of the year nominees</h1>
+            <label>Enter Song name </label>
+            <input type="text"><br>
+            <label>Enter about Song</label>
+            <input type="text"><br>
+            <label>Enter Song image </label>
+            <input type="file"><br>
+            <input type="submit" value="Enter"><br>
+            </form>
+        </div>
+
+
+
+        <div id="singerdiv">
+            <form action="addsinger"  method="post" enctype="multipart/form-data">
+            <h1 class="entryh1">Enter best Singer of the year nominees</h1>
+            <label>Enter Singer name </label>
+            <input type="text"><br>
+            <label>Enter about Singer</label>
+            <input type="text"><br>
+            <label>Enter Singer image </label>
+            <input type="file"><br>
+            <input type="submit" value="Enter"><br>
+            </form>
+        </div>
+
+
+
+
+        <div id="showdiv">
+            <form action="addshow"  method="post" enctype="multipart/form-data">
+            <h1 class="entryh1">Enter best TV Show of the year nominees</h1>
+            <label>Enter TV Show name </label>
+            <input type="text"><br>
+            <label>Enter about TV Shhow</label>
+            <input type="text"><br>
+            <label>Enter TV Show image </label>
+            <input type="file"><br>
+            <input type="submit" value="Enter"><br>
+            </form>
+        </div>
+
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </div>
+</body>
+
+</html>
